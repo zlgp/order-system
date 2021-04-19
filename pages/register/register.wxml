@@ -1,0 +1,26 @@
+<view class="register">
+    <view class="register-title">注册</view>
+    <view class="register-form">
+        <van-cell-group>
+            <van-field model:value="{{ username }}" clearable placeholder="请输入4-20位字母开头的账号" border="{{ true }}" />
+            <van-field model:value="{{ password }}" clearable placeholder="请设置8-20位登录密码" border="{{ true }}" type="password" />
+            <van-field model:value="{{ phone }}" placeholder="请输入手机号" border="{{ false }}" border="{{ true }}" title-width="30%">
+                <view slot="label" style="display:flex">
+                    <van-icon name="arrow-down" size="50rpx" color="#15163D" />
+                    <text>+121212</text>
+                </view>
+            </van-field>
+            <van-field model:value="{{ code }}" clearable placeholder="请输入验证码" border="{{ true }}" use-button-slot>
+                <van-button slot="button" size="small" color="{{phone!==''?'#418FF0':'#F3F3F5'}}">
+                    获取验证码
+                </van-button>
+            </van-field>
+            <van-field model:value="{{ reCode }}" clearable placeholder="请输入邀请码" border="{{ true }}" />
+        </van-cell-group>
+        <view class="register-btn">
+            <van-button size="large" bind:tap="handleRegister" color="{{username&password& phone&code&reCode?'#418FF0':'#F3F3F5'}}">
+                注册
+            </van-button>
+        </view>
+    </view>
+</view>
