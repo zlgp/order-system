@@ -1,0 +1,14 @@
+{
+  "name": "order-system",
+  "version": "1.0.0",
+  "description": "订单系统",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "liao",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.6.8"
+  }
+}
