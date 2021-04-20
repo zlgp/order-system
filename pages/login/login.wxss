@@ -1,1 +1,35 @@
-/* pages/login/login.wxss */
+.login {
+    height: 100vh;
+}
+
+.login-way {
+    margin-top: 227rpx;
+    text-align: center;
+}
+
+.login-way-box {
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.login-way-title {
+    font-size: 25rpx;
+    font-family: Alibaba PuHuiTi;
+    font-weight: 400;
+    color: #A1A2B1;
+    margin-bottom: 75rpx;
+}
+
+.weix-icon {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.weix-name {
+    font-size: 25rpx;
+    font-family: Alibaba PuHuiTi;
+    font-weight: 400;
+    color: #73738B;
+}

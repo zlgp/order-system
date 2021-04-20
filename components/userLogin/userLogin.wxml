@@ -1,0 +1,35 @@
+<view>
+    <view class="login-title">验证码登录</view>
+    <view>
+        <van-cell-group>
+            <van-field model:value="{{ phone }}" placeholder="请输入手机号" border="{{ false }}" border="{{ true }}" title-width="30%">
+                <view slot="label" style="display:flex" bind:tap="showPopup">
+                    <text>{{areaCode}}</text>
+                    <van-icon name="arrow-down" size="50rpx" color="#15163D" />
+                </view>
+            </van-field>
+            <van-field model:value="{{ code }}" clearable placeholder="请输入验证码" border="{{ true }}" use-button-slot>
+                <van-button slot="button" size="small" color="{{phone!==''?'#418FF0':'#F3F3F5'}}">
+                    获取验证码
+                </van-button>
+            </van-field>
+        </van-cell-group>
+    </view>
+    <view class="login-opera">
+        <navigator url="../register/register">注册</navigator>
+        <navigator url="/page/register/registere">忘记密码?</navigator>
+    </view>
+    <view class="login-btn">
+        <van-button size="large" bind:click="handleLogin" color="{{phone!==''&code!==''?'#418FF0':'#F3F3F5'}}" disabled="{{username===''&password===''?true:false}}">
+            登录
+        </van-button>
+    </view>
+    <!-- 区号选择弹窗 -->
+    <van-popup show="{{ show }}" round position="bottom" bind:close="onClose">
+        <view>
+            <van-cell-group>
+                <van-cell wx:for="{{list}}" wx:key="id" title="{{item.name}}" value="{{item.code}}" border="{{ true }}" data-code="{{item.code}}" data-id="{{item.id}}" bind:click="hanldeCell" />
+            </van-cell-group>
+        </view>
+    </van-popup>
+</view>

@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "code-login":"../../components/codeLogin/codeLogin",
+    "username-login":"../../components/userLogin/userLogin"
+  },
+  "navigationBarTitleText": "登录"
 }

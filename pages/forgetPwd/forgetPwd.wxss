@@ -1,10 +1,10 @@
-/* pages/register/register.wxss */
-.register {
+
+.forgetPwd {
     height: 100vh;
 
 }
 
-.register-title {
+.forgetPwd-title {
     font-size: 25px;
     font-family: Alibaba PuHuiTi;
     font-weight: bold;
@@ -14,10 +14,10 @@
     margin-bottom: 100rpx;
 }
 
-.register-form {
+.forgetPwd-form {
     height: 80%;
 }
-.register-btn{
+.forgetPwd-btn{
     padding: 0 28rpx;
     margin-top: 67rpx; 
 }

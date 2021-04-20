@@ -1,0 +1,8 @@
+<view class="selectAreaCode">
+    <view class="selectAreaCode-title">选择国家和地区</view>
+    <view>
+        <van-cell-group>
+            <van-cell wx:for="{{list}}" wx:key="id" title="{{item.name}}" value="{{item.code}}" border="{{ true }}" data-code="{{item.code}}" data-id="{{item.id}}" bind:click="hanldeCell" />
+        </van-cell-group>
+    </view>
+</view>

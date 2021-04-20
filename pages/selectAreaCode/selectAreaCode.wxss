@@ -1,0 +1,14 @@
+.selectAreaCode {
+    height: 100vh;
+}
+
+.selectAreaCode-title {
+    font-size: 50rpx;
+    font-weight: bold;
+    color: #15163D;
+    padding-left:28rpx;
+    box-sizing: border-box;
+    margin-top: 50rpx;
+    margin-bottom: 100rpx;
+}
+

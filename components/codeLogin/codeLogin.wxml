@@ -1,0 +1,16 @@
+<view class="login-title">账号密码登陆</view>
+<view>
+    <van-cell-group>
+        <van-field model:value="{{ username }}" clearable placeholder="请输入登录账号" border="{{ true }}" type="text" />
+        <van-field model:value="{{ password }}" clearable placeholder="请输入登录密码" border="{{ true }}" type="password" />
+    </van-cell-group>
+</view>
+<view class="login-opera">
+    <navigator url="../register/register">注册</navigator>
+    <navigator url="/page/register/registere">忘记密码?</navigator>
+</view>
+<view class="login-btn">
+    <van-button size="large" bind:click="handleLogin" color="{{username!==''&password!==''?'#418FF0':'#F3F3F5'}}" disabled="{{username===''&password===''?true:false}}">
+        登录
+    </van-button>
+</view>

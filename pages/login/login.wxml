@@ -1,2 +1,21 @@
-<!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view class="login">
+    <code-login inner-text="Some text" wx:if="{{loginWay}}"></code-login>
+    <username-login wx:else></username-login>
+    <view class="login-way">
+        <view class="login-way-title">更多登录方式</view>
+        <view class="login-way-box">
+            <view bind:tap="handlWeiXinLogin">
+                <image src="../../images/weixin.jpeg" class="weix-icon" />
+                <view class="weix-name">微信登录</view>
+            </view>
+            <view wx:if="{{loginWay}}" bind:tap="hanldeLogin">
+                <image src="../../images/password-login-icon.png" class="weix-icon" />
+                <view class="weix-name">验证码登录</view>
+            </view>
+            <view wx:else  bind:tap="hanldeLogin">
+                <image src="../../images/code-login-icon.png" class="weix-icon" />
+                <view class="weix-name">账号密码登录</view>
+            </view>
+        </view>
+    </view>
+</view>

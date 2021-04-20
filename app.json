@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/forgetPwd/forgetPwd",
+    "pages/login/login",
     "pages/register/register",
+    "pages/selectAreaCode/selectAreaCode",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/login/login"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -15,6 +17,10 @@
   "usingComponents": {
     "van-button": "@vant/weapp/button/index",
     "van-field": "@vant/weapp/field/index",
-    "van-icon": "@vant/weapp/icon/index"
+    "van-icon": "@vant/weapp/icon/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-popup": "@vant/weapp/popup/index"
   }
 }

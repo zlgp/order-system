@@ -1,32 +1,24 @@
-// pages/register/register.js
+// pages/forgetPwd/forgetPwd.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    username: '',
-    password: '',
     phone: '',
     code: '',
-    reCode: '',
+    password: '',
+    rePassword: '',
     areaCode: '' || '+86',
     areaId: '' || 1
   },
-
-  /**
-   * 页面的事件
-   */
-
-  handleRegister() {
-    wx.navigateTo({
-      url: '../login/login',
-    })
-  },
   handleChooseCode() {
     wx.navigateTo({
-      url: `../selectAreaCode/selectAreaCode?type=register`,
+      url: `../selectAreaCode/selectAreaCode?type=forgetPwd`,
     })
+  },
+  handleforgetPwd() {
+
   },
   /**
    * 生命周期函数--监听页面加载

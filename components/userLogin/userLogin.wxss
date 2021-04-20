@@ -1,0 +1,29 @@
+.login-title {
+    font-size: 50rpx;
+    font-family: Alibaba PuHuiTi;
+    font-weight: bold;
+    color: #15163D;
+    padding-left: 28rpx;
+    box-sizing: border-box;
+    margin: 49rpx 0 124rpx 0;
+}
+
+.login-opera {
+    display: flex;
+    justify-content: space-between;
+    color: skyblue;
+    padding: 0 28rpx;
+    box-sizing: border-box;
+    margin-top: 48rpx;
+}
+
+.login-btn {
+    margin-top: 67rpx;
+    padding: 0 28rpx;
+    box-sizing: border-box;
+}
+
+.van-field {
+    margin-bottom: 20rpx;
+}
+
