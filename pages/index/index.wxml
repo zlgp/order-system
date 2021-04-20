@@ -1,4 +1,19 @@
-<!-- index.wxml -->
-<view class="container">
-  <van-button type="primary">按钮</van-button>
+<view class="index">
+  <view class="index-swiper">
+    <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2000}}" duration="{{500}}">
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item-title">{{item}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="index-classify">
+    <text class="index-classify-title">热门分类</text>
+    <view class="classify-box">
+      <view wx:for="{{classify}}" class="classify-box-item">
+        <image class="" src="{{item.img}}" style="width:100%;height:100%" mode="aspectFit|aspectFill|widthFix" />
+      </view>
+    </view>
+  </view>
 </view>
