@@ -16,8 +16,8 @@
         </van-cell-group>
     </view>
     <view class="login-opera">
-        <navigator url="../register/register">注册</navigator>
-        <navigator url="/page/register/registere">忘记密码?</navigator>
+        <navigator url="../../pages/register/register">注册</navigator>
+        <navigator url="../../pages/forgetPwd/forgetPwd">忘记密码?</navigator>
     </view>
     <view class="login-btn">
         <van-button size="large" bind:click="handleLogin" color="{{phone!==''&code!==''?'#418FF0':'#F3F3F5'}}" disabled="{{username===''&password===''?true:false}}">

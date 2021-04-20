@@ -1,11 +1,12 @@
 {
+  "entryPagePath": "",
   "pages": [
-    "pages/forgetPwd/forgetPwd",
-    "pages/login/login",
-    "pages/register/register",
-    "pages/selectAreaCode/selectAreaCode",
+    "pages/my/my",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/login/login",
+    "pages/forgetPwd/forgetPwd",
+    "pages/register/register",
+    "pages/selectAreaCode/selectAreaCode"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -22,5 +23,25 @@
     "van-cell-group": "@vant/weapp/cell-group/index",
     "van-image": "@vant/weapp/image/index",
     "van-popup": "@vant/weapp/popup/index"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "color": "",
+        "selectedColor": ""
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "color": "",
+        "selectedColor": ""
+      }
+    ]
   }
 }
