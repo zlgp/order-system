@@ -1,1 +1,39 @@
-<view class="my"></view>
+<view class="my">
+    <view class="my-msg">
+        <view class="msg-left">
+            <van-image round width="124rpx" height="124rpx" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+        </view>
+        <view class="msg-right">
+            <view class="msg-right-name">客户</view>
+            <view class="msg-right-dec">简介：一只在草地里打滚的猪</view>
+        </view>
+        <view class="msg-btn">
+            <van-button type="info" size="mini">签到</van-button>
+        </view>
+    </view>
+    <view class="my-list">
+        <view wx:for="{{list}}" class="list-item">
+            <image class="item-img" src="{{item.imgurl}}" lazy-load="true" />
+            <view class="item-name">{{item.name}}</view>
+            <view class="item-num">{{item.num}}</view>
+        </view>
+    </view>
+    <view class="my-order">
+        <view class="my-order-title">我的订单</view>
+        <view class="order-list">
+            <view wx:for="{{orderList}}" class="list-item">
+                <image class="item-img" src="{{item.imgurl}}" lazy-load="true" />
+                <view class="item-name">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="my-order">
+        <view class="my-order-title">我的服务</view>
+        <view class="order-list">
+            <view wx:for="{{serviceList}}" class="list-item" style="margin-bottom:20rpx">
+                <image class="item-img" src="{{item.imgurl}}" lazy-load="true" />
+                <view class="item-name">{{item.name}}</view>
+            </view>
+        </view>
+    </view>
+</view>

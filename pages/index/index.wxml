@@ -11,8 +11,9 @@
   <view class="index-classify">
     <text class="index-classify-title">热门分类</text>
     <view class="classify-box">
-      <view wx:for="{{classify}}" class="classify-box-item">
-        <image class="" src="{{item.img}}" style="width:100%;height:100%" mode="aspectFit|aspectFill|widthFix" />
+      <view wx:for="{{classify}}" wx:key="index" class="classify-box-item" data-url="{{item.router}}" bind:tap="handleRouter">
+        <text class="item-name">{{item.name}}</text>
+        <image class="item-img" src="{{item.img}}" />
       </view>
     </view>
   </view>

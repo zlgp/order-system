@@ -4,8 +4,9 @@ Page({
     background: ['小虎', '鸿世玻璃', '鸿世玻璃'],
     classify: [
       {
-        name: '谁说的',
-        img: '../../images/weixin.jpeg'
+        name: '购物商城',
+        img: '../../images/weixin.jpeg',
+        router: '../shop/shop'
       },
       {
         name: '谁说的',
@@ -20,6 +21,12 @@ Page({
         img: '../../images/weixin.jpeg'
       },
     ]
+  },
+  handleRouter(e) {
+    const { url } = e.currentTarget.dataset
+    wx.navigateTo({
+      url: url,
+    });
   },
   //options(Object)
   onLoad: function (options) {

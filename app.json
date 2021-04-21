@@ -1,8 +1,9 @@
 {
   "entryPagePath": "",
   "pages": [
-    "pages/my/my",
+    "pages/shop/shop",
     "pages/index/index",
+    "pages/my/my",
     "pages/login/login",
     "pages/forgetPwd/forgetPwd",
     "pages/register/register",
