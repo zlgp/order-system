@@ -1,0 +1,12 @@
+<view class="shop">
+    <!-- <van-grid direction="horizontal" column-num="2" gutter="{{ 10 }}">
+        <van-grid-item use-slot wx:for="{{ list }}" wx:key="index" style="display:none">
+            <image class="" src="http://ftes-dev.oss-cn-shenzhen.aliyuncs.com/28d899846bc1ee53e77bf75eb634bcf7.jpg" style="width:100%;" lazy-load="true" />
+            <view>{{index}}</view>
+        </van-grid-item>
+    </van-grid> -->
+    <van-tabs active="{{ active }}" animated>
+        <van-tab title="标签 1">内容 1</van-tab>
+        <van-tab title="标签 2">内容 2</van-tab>
+    </van-tabs>
+</view>
